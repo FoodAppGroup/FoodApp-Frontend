@@ -12,6 +12,8 @@ import {PantryComponent} from './pantry/pantry.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { RecipesComponent } from './recipes/recipes.component';
 import { FoodTrackerComponent } from './food-tracker/food-tracker.component';
+import { HomeComponent } from './home/home.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -19,16 +21,19 @@ import { FoodTrackerComponent } from './food-tracker/food-tracker.component';
     PantryComponent,
     ShoppingListComponent,
     RecipesComponent,
-    FoodTrackerComponent
+    FoodTrackerComponent,
+    HomeComponent
   ],
   imports: [
+    MatToolbarModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
     FlexLayoutModule,
-    MatToolbarModule
+    MatToolbarModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
