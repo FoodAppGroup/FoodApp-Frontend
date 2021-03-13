@@ -1,4 +1,4 @@
-export interface Food {
+export interface Product {
   name: string;
   category: string; /* from the shop */
   packageGram: number; /* gram in one package in the shop */
