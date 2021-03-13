@@ -4,6 +4,7 @@
 
 export const environment = {
   production: false,
+  showConsole: true,
   backendUrl: 'localhost:8080'
 };
 
