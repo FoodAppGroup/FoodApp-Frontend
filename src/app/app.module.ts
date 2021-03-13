@@ -15,6 +15,11 @@ import {ProductTrackerComponent} from './product-tracker/product-tracker.compone
 import {HomeComponent} from './home/home.component';
 import {RouterModule} from '@angular/router';
 import {RecipePlannerComponent} from './recipe-planner/recipe-planner.component';
+import {ProductDetailsComponent} from './product-details/product-details.component';
+import {FormsModule} from '@angular/forms';
+import {ProductControllerService} from './services/product-controller.service';
+import {LoggerService} from './services/logger.service';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,9 +29,11 @@ import {RecipePlannerComponent} from './recipe-planner/recipe-planner.component'
     StockTrackerComponent,
     ShoppingListComponent,
     RecipesComponent,
-    RecipePlannerComponent
+    RecipePlannerComponent,
+    ProductDetailsComponent
   ],
   imports: [
+    HttpClientModule,
     MatToolbarModule,
     BrowserModule,
     AppRoutingModule,
@@ -35,9 +42,13 @@ import {RecipePlannerComponent} from './recipe-planner/recipe-planner.component'
     MatButtonModule,
     FlexLayoutModule,
     MatToolbarModule,
-    RouterModule
+    RouterModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [
+    ProductControllerService,
+    LoggerService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {

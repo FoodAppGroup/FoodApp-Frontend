@@ -8,6 +8,7 @@ import {ShoppingListComponent} from './shopping-list/shopping-list.component';
 import {RecipesComponent} from './recipes/recipes.component';
 import {ProductTrackerComponent} from './product-tracker/product-tracker.component';
 import {RecipePlannerComponent} from './recipe-planner/recipe-planner.component';
+import {ProductDetailsComponent} from './product-details/product-details.component';
 
 
 const routes: Routes = [
@@ -21,6 +22,7 @@ const routes: Routes = [
     component: HomeComponent,
   },
   {path: 'product-tracker', component: ProductTrackerComponent},
+  {path: 'product-details', component: ProductDetailsComponent},
   {path: 'stock-tracker', component: StockTrackerComponent},
   {path: 'shopping-list', component: ShoppingListComponent},
   {path: 'recipes', component: RecipesComponent},

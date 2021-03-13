@@ -1,14 +1,14 @@
 <mat-toolbar>
   <mat-toolbar-row fxLayout="row" fxLayoutAlign="center center">
-    FOODINATOR
+    Fresh Planner
   </mat-toolbar-row>
 </mat-toolbar>
 <div style="background-image: url('../../assets/background.png'); height: 100%" fxLayout="column">
   <div fxFlex="50"></div>
   <div fxflex="50" fxLayout="column" fxLayoutAlign="space-between">
-    <button style="margin: 5px" mat-raised-button (click)="onOpenPantry()">PANTRY</button>
+    <button (click)="onOpenStockTracker()" mat-raised-button style="margin: 5px">PANTRY</button>
     <button style="margin: 5px" mat-raised-button (click)="onOpenShoppingList()">SHOPPING LIST</button>
     <button style="margin: 5px" mat-raised-button (click)="onOpenRecipes()">RECIPES</button>
-    <button style="margin: 5px" mat-raised-button (click)="onOpenFoodTracker()">FOOD TRACKER</button>
+    <button (click)="onOpenProductTracker()" mat-raised-button style="margin: 5px">FOOD TRACKER</button>
   </div>
 </div>

@@ -1,0 +1,33 @@
+<!-- only displayed if selected Hero != null -->
+<div *ngIf="product">
+  <h2>{{product.name | uppercase}} Details</h2>
+  <div><span>name: </span>{{product.name}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="product.name" placeholder="Apfel"/>
+    </label>
+    <label>category:
+      <input [(ngModel)]="product.name" placeholder="FRUIT"/>
+    </label>
+    <label>gram per package:
+      <input [(ngModel)]="product.name" placeholder="500"/>
+    </label>
+    <label>kCal per 100g:
+      <input [(ngModel)]="product.name" placeholder="100"/>
+    </label>
+    <label>carbohydrates per 100g:
+      <input [(ngModel)]="product.name" placeholder="20"/>
+    </label>
+    <label>protein per 100g:
+      <input [(ngModel)]="product.name" placeholder="10"/>
+    </label>
+    <label>fat per 100g:
+      <input [(ngModel)]="product.name" placeholder="10"/>
+    </label>
+    <label>product unit:
+      <input [(ngModel)]="product.name" placeholder="gram"/>
+    </label>
+  </div>
+  <button (click)="save()">save</button>
+  <button (click)="goBack()">go back</button>
+</div>

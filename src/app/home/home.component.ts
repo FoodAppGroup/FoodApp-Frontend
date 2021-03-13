@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import {Component} from '@angular/core';
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -12,20 +12,20 @@ export class HomeComponent {
               private route: Router) {
   }
 
-  onOpenPantry() {
-    this.route.navigate(['pantry'], );
+  onOpenStockTracker() {
+    this.route.navigate(['stock-tracker'],);
   }
 
   onOpenShoppingList() {
-    this.route.navigate(['shopping-list'], );
+    this.route.navigate(['shopping-list'],);
   }
 
   onOpenRecipes() {
-    this.route.navigate(['recipes'], );
+    this.route.navigate(['recipes'],);
   }
 
-  onOpenFoodTracker() {
-    this.route.navigate(['food-tracker'], );
+  onOpenProductTracker() {
+    this.route.navigate(['product-tracker'],);
   }
 
 

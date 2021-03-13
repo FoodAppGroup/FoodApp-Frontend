@@ -1,1 +1,10 @@
-<p>recipe-tracker works!</p>
+<h2>Product Tracker</h2>
+
+<ul class="heroes">
+  <!-- For loop with function binding on click and assign css class if selected -->
+  <li *ngFor="let product of products">
+    <a routerLink="/product-details/{{product.name}}">
+      <span class="badge">{{product.category}}</span> {{product.name}}
+    </a>
+  </li>
+</ul>
