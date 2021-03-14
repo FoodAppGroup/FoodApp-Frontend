@@ -13,6 +13,37 @@ a {
   text-decoration: none;
 }
 
+ul.noDots {
+  list-style-type: none;
+}
+
+button {
+  background-color: #eee;
+  font-family: Arial, sans-serif;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.delete {
+  position: relative;
+  left: 194px;
+  top: -32px;
+  background-color: gray !important;
+  color: white;
+}
+
+button:hover {
+  background-color: #cfd8dc;
+}
+
+button:disabled {
+  background-color: #eee;
+  color: #ccc;
+  cursor: auto;
+}
+
 button:hover {
   background-color: gray;
   color: black;
